@@ -8,7 +8,7 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals assertEquals */
+/* globals expect */
 /* exported FAKE_WSS_POST_URL, FAKE_WSS_URL, FAKE_WSS_POST_URL, FAKE_ROOM_ID,
    FAKE_CLIENT_ID, MockWebSocket, MockXMLHttpRequest, webSockets, xhrs,
    MockWindowPort, FAKE_SEND_EXCEPTION, Mock */
@@ -23,7 +23,7 @@ var FAKE_SEND_EXCEPTION = 'Send exception';
 
 var webSockets = [];
 var MockWebSocket = function(url) {
-  assertEquals(FAKE_WSS_URL, url);
+  expect(url).toEqual(FAKE_WSS_URL);
 
   this.url = url;
   this.messages = [];
