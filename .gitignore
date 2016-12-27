@@ -11,3 +11,4 @@ secrets.json
 temp/*
 validation-report.json
 validation-status.json
+config.bat
